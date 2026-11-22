@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<link rel="stylesheet" href="stil.css">
+<head>
+  <meta charset="utf-8">
+  <title>Titlul din fila browserului</title>
+
+</head>
+<button onclick="altaViata()">Altă viață</button>
+<body id='card'>
+
+<script>
+function altaViata(){
+document.getElementById('nume').textContent = 'Inginer în Electronică, Bosch';
+document.getElementById('rol').textContent = 'Echipa de cercetare in microbaterii pentru bormasini de noua generatie ';
+document.getElementById('pasiuni').innerHTML = '<li>Blinking led la o tabara de robotica</li><li>stagiu de vară în Germania</li><li>primul brevet</li>';
+document.getElementById('poza').src = 'imagini/viitor.png';
+document.getElementById('card').style.backgroundColor = '#effa91';
+document.getElementById('card').style.color = '#3282e3';
+document.getElementById('poza').style.opacity = '0.5';
+document.getElementById('poza').style.borderWidth = '6px';
+
+
+}
+</script>
+  <h1>Profil personal</h1>
+  
+  <p id='nume'><b>Nume si prenume:</b> Pop Horatiu</p>
+  <p id='rol'> <b>Student anul<b> I, Electronică</p>
+  <p><b>E-Mail:</b> Pop.Cl.Horatiu@student.utcluj.ro</p>
+  <img id='poza' src="./Imagini/PopHoratiu.jpg" alt="Fotografia mea">
+  <p><b>Asteptari legate de educatie:</b></p>
+  <p> - "Ing." inaintea numelui</p>
+  <p><b>Discipline:</b> https://etti.utcluj.ro/planuri-de-invatamant.html</p>
+  <table>
+    <tr>
+      <th><b>Disciplina</b></th>
+      <th><b>An</b></th>
+      <th><b>Link</b></th>
+    </tr>
+    <tr>
+      <td><b>Informatica Aplicata</b></td>
+      <td><b>1</b></td>
+      <td><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/06.pdf">https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/06.pdf</a></td>
+    </tr>
+    <tr>
+      <td><b>Componente si circuite pasive</b></td>
+      <td><b>1</b></td>
+      <td><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/05a.pdf">https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/05a.pdf</a></td>
+    </tr>
+    <tr>
+      <td><b>Programare</b></td>
+      <td><b>1</b></td>
+      <td><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/04a.pdf">https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/04a.pdf</a></td>
+    </tr>
+    <tr>
+      <td><b>Fizica</b></td>
+      <td><b>1</b></td>
+      <td><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/03.pdf">https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/03.pdf</a></td>
+    </tr>
+  </table>
+  <div id='pasiuni'>
+  <p><b>Hobby-uri:</b></p>
+  <p> -sport</p>
+  <p> -filme/ seriale</p>
+  <p> -gatit</p>
+  </div>
+  <p><a href="index.html">Index</a></p>
+  <p id="anWeb" onmouseover="arataVechimea()" onmouseout="arataAnul()">
+  M-am nascut in 18.05.2005.
+</p>
+<script>
+  function arataVechimea() {
+    const anCurent = new Date().getFullYear();
+    const vechime = anCurent - 2005;
+    document.getElementById('anWeb').textContent =
+      'Acum am ' + vechime + ' de ani.';
+  }
+  function arataAnul() {
+    document.getElementById('anWeb').textContent =
+      'M-am nascut in 18.05.2005.';
+  }
+</script>
+</body>
+</html>

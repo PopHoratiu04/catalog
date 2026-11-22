@@ -1,0 +1,34 @@
+css
+body {
+    background-color: lightblue;
+    color: black;
+    font-family: Arial;
+    margin: 30px;
+}
+h1 {
+    color: darkblue;
+    font-size: 30px;
+}
+h2 {
+    color: blue;
+    font-size: 24px;
+}
+p {
+    font-size: 17px;
+}
+a {
+    color: darkblue;
+}
+img {
+    width: 180px;
+    height: 150px;
+    border-radius: 15px;
+    border: 2px solid darkblue;
+    opacity: 0.9;
+    margin: 15px;
+}
+#titlu {
+    color: red;
+    text-align: center;
+    font-size: 32px;
+}

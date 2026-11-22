@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <title>Catalogul grupei</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <h1>Index</h1>
+  <img src="./imagini/TEAMWORK.jpg" alt="Fotografia mea">
+  <p>Acest grup de persoane vor trece cu brio primul semestru</p>
+
+  <img src="imagini/spider.jpg" alt="Spider">
+  <img src="imagini/caine.png" alt="Caine">
+  <p><a href="PopHoratiu.html">Pop Horatiu</a></p>
+
+  <p><a href="RobertMarco.html">Petra Robert-Marco</a></p>
+  <p><a href="NegreaStefan.html">Negrea Stefan</a></p>
+ 
+  <div class="mySlides">
+    <img src="imagini/PopHoratiu.jpg" alt="Pop Horatiu">
+    <a class="nume" href="PopHoratiu.html">Pop Horatiu</a>
+  </div>
+  <div class="mySlides">
+    <img src="imagini/Picture2.png" alt="Robert Marco">
+    <a class="nume" href="RobertMarco.html">Robert Marco</a>
+  </div>
+  <div class="mySlides">
+    <img src="imagini/Picture3.jpg" alt="Negrea Stefan">
+    <a class="nume" href="NegreaStefan.html">Negrea Stefan</a>
+  </div>
+
+  <style>
+    .mySlides { display: none; position: relative; }
+    .mySlides img { width: 150px; }
+    .nume { position: absolute; left: 12px; bottom: 12px;
+            color: #fff; background: rgba(0, 0, 0, 0.55); }
+  </style>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      const slides = document.getElementsByClassName('mySlides');
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = 'block';
+      setTimeout(showSlides, 3000);
+    }
+  </script>
+</body>
+</html>
